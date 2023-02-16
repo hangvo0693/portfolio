@@ -1,0 +1,23 @@
+:root {
+	--coffee: #603524;
+    --coffee-dark: #250d03;
+	--cream: #e6d7c4;
+}
+
+html {
+    background: var(--cream);
+    scroll-behavior: smooth;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: var(--coffee-dark);
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
