@@ -1,6 +1,7 @@
 :root {
 	--coffee: #603524;
     --coffee-dark: #250d03;
+    --choco: #361c11;
 	--cream: #e6d7c4;
 }
 
@@ -15,9 +16,258 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: scroll;
-    color: var(--coffee-dark);
+    font-family: 'Cormorant', serif;
+    font-size: 18px;
 }
 ::-webkit-scrollbar {
     width: 0;
     background: transparent;
+}
+
+nav {
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    transition: transform 0.5s ease-out;
+}
+.navMain {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+.navLeft {
+    display: flex;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 22px;
+}
+#navLeft2 {
+    color: wheat;
+}
+.navRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+.navEach {
+    text-decoration: none;
+    color: white;
+}
+.navDiv {
+    translate: 0 -5px;
+}
+
+main {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    position: relative;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#section1 {
+    height: 80vh;
+}
+
+.bannerImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+}
+.bannerImg:nth-of-type(1) {
+    background: url("./images/main/P.KHACH\ VIEW\ 3.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.bannerImg:nth-of-type(2) {
+    background: url("./images/main/P.\ NGU\ 2\ VIEW\ 1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.bannerImg:nth-of-type(3) {
+    background: url("./images/main/BEP\ VIEW\ 1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.bannerImg:nth-of-type(4) {
+    background: url("./images/main/P.\ NGU\ 1\ VIEW\ 1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.bannerImg:nth-of-type(5) {
+    background: url("./images/main/P.\ NGU\ 4\ VIEW\ 4.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.bannerCover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.7;
+}
+.bannerTitle {
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    color: white;
+    font-size: 100px;
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+}
+#banner1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 700px;
+    height: 3px;
+    border-radius: 2px;
+    background: white;
+}
+#banner1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 700px;
+    height: 3px;
+    border-radius: 2px;
+    background: white;
+}
+#banner2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 550px;
+    height: 3px;
+    border-radius: 2px;
+    background: white;
+}
+#banner2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 550px;
+    height: 3px;
+    border-radius: 2px;
+    background: white;
+}
+#banner3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 580px;
+    height: 3px;
+    border-radius: 2px;
+    background: white;
+}
+#banner3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 580px;
+    height: 3px;
+    border-radius: 2px;
+    background: white;
+}
+#banner4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 610px;
+    height: 3px;
+    border-radius: 2px;
+    background: white;
+}
+#banner4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 610px;
+    height: 3px;
+    border-radius: 2px;
+    background: white;
+}
+#banner5::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 570px;
+    height: 3px;
+    border-radius: 2px;
+    background: white;
+}
+#banner5::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 570px;
+    height: 3px;
+    border-radius: 2px;
+    background: white;
+}
+
+
+.sectionBody {
+    width: 80vw;
+    display: flex;
+}
+.sectionTitle {
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    margin: 5vh 0;
+}
+
+#section2 {
+    height: 100vh;
+}
+#sectionBody2 {
+    flex-direction: column;
+}
+
+#section3 {
+    height: 100vh;
+    background: var(--coffee);
+}
+#sectionBody3 {
+    justify-content: center;
+}
+
+#section4 {
+    height: 70vh;
+}
+#sectionBody4 {
+    justify-content: center;
+}
+
+footer {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footLink {
+    color: var(--coffee);
 }
