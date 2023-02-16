@@ -1,7 +1,6 @@
 :root {
 	--coffee: #603524;
-    --coffee-dark: #250d03;
-    --choco: #361c11;
+    --choco: #250d03;
 	--cream: #e6d7c4;
 }
 
@@ -91,23 +90,23 @@ section {
     transition: opacity 1.5s ease-out;
 }
 .bannerImg:nth-of-type(1) {
-    background: url("./images/main/P.KHACH\ VIEW\ 3.png") no-repeat 50% 50%;
+    background: url("./images/main/khach-view-3.png") no-repeat 50% 50%;
     background-size: cover;
 }
 .bannerImg:nth-of-type(2) {
-    background: url("./images/main/P.\ NGU\ 2\ VIEW\ 1.png") no-repeat 50% 50%;
+    background: url("./images/main/ngu-2-view-1.png") no-repeat 50% 50%;
     background-size: cover;
 }
 .bannerImg:nth-of-type(3) {
-    background: url("./images/main/BEP\ VIEW\ 1.png") no-repeat 50% 50%;
+    background: url("./images/main/bep-view-1.png") no-repeat 50% 50%;
     background-size: cover;
 }
 .bannerImg:nth-of-type(4) {
-    background: url("./images/main/P.\ NGU\ 1\ VIEW\ 1.png") no-repeat 50% 50%;
+    background: url("./images/main/ngu-1-view-1.png") no-repeat 50% 50%;
     background-size: cover;
 }
 .bannerImg:nth-of-type(5) {
-    background: url("./images/main/P.\ NGU\ 4\ VIEW\ 4.png") no-repeat 50% 50%;
+    background: url("./images/main/ngu-4-view-4.png") no-repeat 50% 50%;
     background-size: cover;
 }
 .bannerCover {
@@ -236,6 +235,7 @@ section {
     font-family: 'Cinzel', serif;
     font-size: 40px;
     margin: 5vh 0;
+    color: var(--choco);
 }
 
 #section2 {
