@@ -101,14 +101,6 @@ section {
     background: url("./images/main/bep-view-1.png") no-repeat 50% 50%;
     background-size: cover;
 }
-.bannerImg:nth-of-type(4) {
-    background: url("./images/main/ngu-1-view-1.png") no-repeat 50% 50%;
-    background-size: cover;
-}
-.bannerImg:nth-of-type(5) {
-    background: url("./images/main/ngu-4-view-4.png") no-repeat 50% 50%;
-    background-size: cover;
-}
 .bannerCover {
     position: absolute;
     width: 100%;
@@ -155,45 +147,60 @@ section {
     border-top: white solid;
     border-bottom: white solid;
 }
-#banner4::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 4px;
-    width: 610px;
-    height: 108px;
-    border-top: white solid;
-    border-bottom: white solid;
-}
-#banner5::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 4px;
-    width: 570px;
-    height: 108px;
-    border-top: white solid;
-    border-bottom: white solid;
-}
-
 
 .sectionBody {
     width: 80vw;
+    margin: 5vh 0;
     display: flex;
 }
 .sectionTitle {
-    font-family: 'Cinzel', serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 40px;
-    margin: 5vh 0;
     color: var(--choco);
 }
 
 #section2 {
-    height: 100vh;
+    min-height: 80vh;
 }
-#sectionBody2 {
+#title2 {
+    margin: 5vh 0 0 5vw;
+}
+.section2Left {
+    width: 50vw;
+    display: flex;
     flex-direction: column;
 }
+.section2LeftContent {
+    margin: 10vh 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+.content {
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.section2Right {
+    width: 30vw;
+    margin: 5vh 0;
+    border-radius: 55% 45% 57% 43% / 67% 49% 51% 33%;
+    background: url("./images/profile.jpeg") no-repeat 50% 50%;
+    background-size: cover;
+}
+.section2Right::before {
+    content: "";
+    width: 30%;
+    height: 75%;
+    border-radius: 39% 61% 66% 34% / 68% 57% 43% 32%;
+    position: absolute;
+    background: var(--coffee);
+    z-index: -1;
+}
+
 
 #section3 {
     height: 100vh;
@@ -231,7 +238,7 @@ footer {
 	border-radius: 50%;
     translate: -50% -50%;
 	pointer-events: none;
-	transition:all 0.3s ease-out;
+	transition: all 0.2s ease-out;
 }
 .cursor1 {
     border: 3px solid #fff;

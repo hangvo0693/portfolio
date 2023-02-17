@@ -41,7 +41,7 @@ document.querySelector("#section4").addEventListener("mouseover", function(event
   document.querySelector("#navRight2").style.fontStyle = "normal";
   document.querySelector("#navRight3").style.fontStyle = "italic";
 });
-//Mouse change - navbar
+//Mouse change - links
 document.querySelectorAll("a").forEach((each) => {
   each.addEventListener("mouseover", function(event) {
     cursor.classList.add("cursorHover");
@@ -55,7 +55,7 @@ document.querySelectorAll("a").forEach((each) => {
 let bannerPic = 0;
 let currentBanner = 0;
 function slideShowBanner() {
-    if (bannerPic === 5) {
+    if (bannerPic === 3) {
         bannerPic = 1;
     } else {
         bannerPic +=1;
@@ -64,8 +64,8 @@ function slideShowBanner() {
       document.querySelectorAll(".bannerImg")[bannerPic-1].style.opacity = "1";
       document.querySelectorAll(".bannerTitle")[bannerPic-1].style.opacity = "1";
       if (bannerPic === 1) {
-          document.querySelectorAll(".bannerImg")[4].style.opacity = "0";
-          document.querySelectorAll(".bannerTitle")[4].style.opacity = "0";
+          document.querySelectorAll(".bannerImg")[2].style.opacity = "0";
+          document.querySelectorAll(".bannerTitle")[2].style.opacity = "0";
       } else {
           document.querySelectorAll(".bannerImg")[bannerPic-2].style.opacity = "0";
           document.querySelectorAll(".bannerTitle")[bannerPic-2].style.opacity = "0";
