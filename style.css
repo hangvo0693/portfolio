@@ -131,19 +131,9 @@ section {
     left: 0;
     top: 4px;
     width: 700px;
-    height: 3px;
-    border-radius: 2px;
-    background: white;
-}
-#banner1::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -12px;
-    width: 700px;
-    height: 3px;
-    border-radius: 2px;
-    background: white;
+    height: 108px;
+    border-top: white solid;
+    border-bottom: white solid;
 }
 #banner2::before {
     content: "";
@@ -151,19 +141,9 @@ section {
     left: 0;
     top: 4px;
     width: 550px;
-    height: 3px;
-    border-radius: 2px;
-    background: white;
-}
-#banner2::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -12px;
-    width: 550px;
-    height: 3px;
-    border-radius: 2px;
-    background: white;
+    height: 108px;
+    border-top: white solid;
+    border-bottom: white solid;
 }
 #banner3::before {
     content: "";
@@ -171,19 +151,9 @@ section {
     left: 0;
     top: 4px;
     width: 580px;
-    height: 3px;
-    border-radius: 2px;
-    background: white;
-}
-#banner3::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -12px;
-    width: 580px;
-    height: 3px;
-    border-radius: 2px;
-    background: white;
+    height: 108px;
+    border-top: white solid;
+    border-bottom: white solid;
 }
 #banner4::before {
     content: "";
@@ -191,19 +161,9 @@ section {
     left: 0;
     top: 4px;
     width: 610px;
-    height: 3px;
-    border-radius: 2px;
-    background: white;
-}
-#banner4::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -12px;
-    width: 610px;
-    height: 3px;
-    border-radius: 2px;
-    background: white;
+    height: 108px;
+    border-top: white solid;
+    border-bottom: white solid;
 }
 #banner5::before {
     content: "";
@@ -211,19 +171,9 @@ section {
     left: 0;
     top: 4px;
     width: 570px;
-    height: 3px;
-    border-radius: 2px;
-    background: white;
-}
-#banner5::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -12px;
-    width: 570px;
-    height: 3px;
-    border-radius: 2px;
-    background: white;
+    height: 108px;
+    border-top: white solid;
+    border-bottom: white solid;
 }
 
 

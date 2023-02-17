@@ -27,6 +27,17 @@ function checkScrollDirectionIsUp(event) {
   return event.deltaY < 0;
 }
 
+//COLLAPSE SUBMENU ON CHOOSE
+document.querySelector("#navRight1").addEventListener("click", function(event) {
+  document.querySelector("nav").style.transform = 'translateY(-100px)';
+});
+document.querySelector("#navRight2").addEventListener("click", function(event) {
+  document.querySelector("nav").style.transform = 'translateY(-100px)';
+});
+document.querySelector("#navRight3").addEventListener("click", function(event) {
+  document.querySelector("nav").style.transform = 'translateY(-100px)';
+});
+
 //Animation
 const animate = () => {
     if (currentBanner !== bannerPic) {
