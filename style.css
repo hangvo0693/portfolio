@@ -41,15 +41,33 @@ nav {
     width: 80vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .navLeft {
+    height: fit-content;
+    text-decoration: none;
     display: flex;
     align-items: center;
     font-family: 'Jost', sans-serif;
     font-size: 22px;
 }
-#navLeft2 {
-    color: wheat;
+.navLeft::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    top: 63px;
+    background: wheat;
+    transition: width 0.3s ease-out;
+}
+.navLeft:hover::after {
+    width: 170px;
+}
+.navLeft1 {
+    color: white;
+}
+.navLeft2 {
+    color: goldenrod;
 }
 .navRight {
     display: flex;
@@ -65,6 +83,45 @@ nav {
 }
 .navDiv {
     translate: 0 -5px;
+}
+#navRight1:hover , #navRight2:hover, #navRight3:hover {
+    color: wheat;
+}
+#navRight1::before {
+    content: "";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    top: 60px;
+    background: white;
+    transition: width 0.4s ease-out;
+}
+#navRight1.is-on::before {
+    width: 50px;
+}
+#navRight2::before {
+    content: "";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    top: 60px;
+    background: white;
+    transition: width 0.4s ease-out;
+}
+#navRight2.is-on::before {
+    width: 63px;
+}
+#navRight3::before {
+    content: "";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    top: 60px;
+    background: white;
+    transition: width 0.4s ease-out;
+}
+#navRight3.is-on::before {
+    width: 63px;
 }
 
 
@@ -176,7 +233,7 @@ section {
     flex-direction: column;
 }
 .section2LeftContent {
-    margin: 10vh 5vw;
+    margin: 3vw 5vw 10vh 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,19 +265,233 @@ section {
 
 
 #section3 {
-    min-height: 100vh;
+    min-height: 80vh;
     background: var(--coffee);
 }
 .sectionBody3 {
     width: 100%;
     margin: 8vh 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .sectionTitle3 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;
     color: wheat;
+}
+.wrapper {
+    margin: 6vh 0;
+    height: 50vh;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.project {
+    width: 50vh;
+    height: 48vh;
+    min-width: 300px;
+    min-height: 300px;
+    margin: 0 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+    background: wheat;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+.projectDes {
+    width: 50vh;
+    height: 48vh;
+    min-width: 300px;
+    min-height: 300px;
+    background-image: linear-gradient(
+    to top,
+    rgb(0, 0, 0),
+    rgba(0, 0, 0, 0.7) 30%,
+    rgba(0, 0, 0, 0) 40%
+    );
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.projectName {
+    color: white;
+    margin: 5% 6%;
+}
+.name {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+}
+.view {
+    width: 8vh;
+    height: 3vh;
+    border: none;
+    border-radius: 1.5vh;
+    margin: 5% 6%;
+    background-color: rgb(255, 128, 0);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.view:hover {
+    cursor: pointer;
+    background-color: rgb(255, 187, 0);
+}
+.view:active {
+    scale: 0.9;
+}
+.projectCover {
+    position: absolute;
+    width: 50vh;
+    height: 48vh;
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 5px;
+    background: black;
+    opacity: 0.7;
+    transition: all 0.5s ease-in-out;
+}
+.project.is-in {
+    height: 50vh;
+}
+.project.is-in .projectCover {
+    height: 50vh;
+    opacity: 0;
+}
+.project.is-in .projectDes {
+    height: 50vh;
+}
+.project.is-in .view {
+    opacity: 1;
+    z-index: 100;
+}
+.dotGroup {
+    display: flex;
+    align-items: center;
+}
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: wheat;
+    margin: 0 5px;
+    transition: all 0.3s ease-in-out;
+}
+.dot.is-at {
+    width: 40px;
+    background: goldenrod;
+}
+.prevBut, .nextBut {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    border: white solid 1px;
+    background: var(--coffee);
+    z-index: 100;
+}
+.prevBut {
+    margin-right: 20px;
+}
+.nextBut {
+    margin-left: 20px;
+}
+.pre, .nex {
+    width: 2vh;
+    height: 2vh;
+    border: white solid;
+    rotate: 45deg;
+}
+.pre {
+    border-width: 0 0 1px 1px;
+    translate: 1.2vh 0;
+}
+.nex {
+    border-width: 1px 1px 0 0;
+    translate: 0.4vh 0;
+}
+.prevBut:hover, .nextBut:hover {
+    border: rgb(255, 162, 0) solid 2px;
+    cursor: pointer;
+}
+.prevBut:hover .pre {
+    border: rgb(255, 162, 0) solid;
+    border-width: 0 0 2px 2px;
+}
+.nextBut:hover .nex {
+    border: rgb(255, 162, 0) solid;
+    border-width: 2px 2px 0 0;
+}
+.prevBut:active, .nextBut:active {
+    scale: 0.8;
+}
+
+
+.project:nth-of-type(1) {
+    background: url("./images/nha-1/ngu-1-view-1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.project:nth-of-type(2) {
+    background: url("./images/nha-1/ngu-1-view-1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.project:nth-of-type(3) {
+    background: url("./images/nha-1/ngu-1-view-1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.project:nth-of-type(4) {
+    background: url("./images/nha-1/ngu-1-view-1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.project:nth-of-type(5) {
+    background: url("./images/nha-1/ngu-1-view-1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.project:nth-of-type(6) {
+    background: url("./images/nha-1/ngu-1-view-1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.project:nth-of-type(7) {
+    background: url("./images/nha-1/ngu-1-view-1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.project:nth-of-type(8) {
+    background: url("./images/nha-1/khach-1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.project:nth-of-type(9) {
+    background: url("./images/new-alys/na-2.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.project:nth-of-type(10) {
+    background: url("./images/az-home/az-1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.project:nth-of-type(11) {
+    background: url("./images/nha-1/ngu-1-view-1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.project:nth-of-type(12) {
+    background: url("./images/nha-1/ngu-1-view-1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.project:nth-of-type(13) {
+    background: url("./images/nha-1/ngu-1-view-1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.project:nth-of-type(14) {
+    background: url("./images/nha-1/ngu-1-view-1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+.project:nth-of-type(15) {
+    background: url("./images/nha-1/ngu-1-view-1.png") no-repeat 50% 50%;
+    background-size: cover;
 }
 
 
@@ -259,9 +530,11 @@ section {
     flex-direction: column;
     gap: 20px;
     font-size: 20px;
+    z-index: 100;
 }
 .info {
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 .infoLink {
