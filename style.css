@@ -279,7 +279,7 @@ section {
 .sectionTitle3 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 30px;
-    color: wheat;
+    color: rgb(255, 247, 230);
 }
 .wrapper {
     margin: 6vh 0;
@@ -467,7 +467,7 @@ section {
     background-size: cover;
 }
 .project:nth-of-type(9) {
-    background: url("./images/nha-1/ngu-1-view-1.png") no-repeat 50% 50%;
+    background: url("./images/dongthap/dongthap-5.png") no-repeat 50% 50%;
     background-size: cover;
 }
 
