@@ -67,7 +67,7 @@ nav {
     color: white;
 }
 .navLeft2 {
-    color: goldenrod;
+    color: rgb(255, 181, 152);
 }
 .navRight {
     display: flex;
@@ -380,13 +380,13 @@ section {
     width: 6px;
     height: 6px;
     border-radius: 3px;
-    background: wheat;
+    background: white;
     margin: 0 5px;
     transition: all 0.3s ease-in-out;
 }
 .dot.is-at {
     width: 40px;
-    background: goldenrod;
+    background: rgb(255, 181, 152);
 }
 .prevBut, .nextBut {
     width: 5vh;
@@ -463,7 +463,7 @@ section {
     background-size: cover;
 }
 .project:nth-of-type(8) {
-    background: url("./images/nha-1/ngu-1-view-1.png") no-repeat 50% 50%;
+    background: url("./images/vungtau/vungtau-15.png") no-repeat 50% 50%;
     background-size: cover;
 }
 .project:nth-of-type(9) {
