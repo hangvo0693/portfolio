@@ -109,12 +109,15 @@ slideShowBanner();
 
 
 //Hide-show navbar
+let onMain = true;
 document.body.addEventListener('wheel', checkScrollDirection);
 function checkScrollDirection(event) {
-  if (checkScrollDirectionIsUp(event)) {
-    document.querySelector("nav").style.transform = 'translateY(0)';
-  } else {
-    document.querySelector("nav").style.transform = 'translateY(-100px)';
+  if (onMain === true) {
+    if (checkScrollDirectionIsUp(event)) {
+      document.querySelector("nav").style.transform = 'translateY(0)';
+    } else {
+      document.querySelector("nav").style.transform = 'translateY(-100px)';
+    }
   }
 }
 function checkScrollDirectionIsUp(event) {
@@ -204,80 +207,98 @@ window.addEventListener("resize", onWindowResize, false);
 document.querySelector("#view1").addEventListener("click", function(event) {
   document.querySelector("#detail1").style.display = "flex";
   document.body.style.overflowY = "hidden";
+  onMain = false
 });
 document.querySelector("#close1").addEventListener("click", function(event) {
   document.querySelector("#detail1").style.display = "none";
   document.body.style.overflowY = "scroll";
+  onMain = true
 });
 //Project 2
 document.querySelector("#view2").addEventListener("click", function(event) {
   document.querySelector("#detail2").style.display = "flex";
   document.body.style.overflowY = "hidden";
+  onMain = false
 });
 document.querySelector("#close2").addEventListener("click", function(event) {
   document.querySelector("#detail2").style.display = "none";
   document.body.style.overflowY = "scroll";
+  onMain = true
 });
 //Project 3
 document.querySelector("#view3").addEventListener("click", function(event) {
   document.querySelector("#detail3").style.display = "flex";
   document.body.style.overflowY = "hidden";
+  onMain = false
 });
 document.querySelector("#close3").addEventListener("click", function(event) {
   document.querySelector("#detail3").style.display = "none";
   document.body.style.overflowY = "scroll";
+  onMain = true
 });
 //Project 4
 document.querySelector("#view4").addEventListener("click", function(event) {
   document.querySelector("#detail4").style.display = "flex";
   document.body.style.overflowY = "hidden";
+  onMain = false
 });
 document.querySelector("#close4").addEventListener("click", function(event) {
   document.querySelector("#detail4").style.display = "none";
   document.body.style.overflowY = "scroll";
+  onMain = true
 });
 //Project 5
 document.querySelector("#view5").addEventListener("click", function(event) {
   document.querySelector("#detail5").style.display = "flex";
   document.body.style.overflowY = "hidden";
+  onMain = false
 });
 document.querySelector("#close5").addEventListener("click", function(event) {
   document.querySelector("#detail5").style.display = "none";
   document.body.style.overflowY = "scroll";
+  onMain = true
 });
 //Project 6
 document.querySelector("#view6").addEventListener("click", function(event) {
   document.querySelector("#detail6").style.display = "flex";
   document.body.style.overflowY = "hidden";
+  onMain = false
 });
 document.querySelector("#close6").addEventListener("click", function(event) {
   document.querySelector("#detail6").style.display = "none";
   document.body.style.overflowY = "scroll";
+  onMain = true
 });
 //Project 7
 document.querySelector("#view7").addEventListener("click", function(event) {
   document.querySelector("#detail7").style.display = "flex";
   document.body.style.overflowY = "hidden";
+  onMain = false
 });
 document.querySelector("#close7").addEventListener("click", function(event) {
   document.querySelector("#detail7").style.display = "none";
   document.body.style.overflowY = "scroll";
+  onMain = true
 });
 //Project 8
 document.querySelector("#view8").addEventListener("click", function(event) {
   document.querySelector("#detail8").style.display = "flex";
   document.body.style.overflowY = "hidden";
+  onMain = false
 });
 document.querySelector("#close8").addEventListener("click", function(event) {
   document.querySelector("#detail8").style.display = "none";
   document.body.style.overflowY = "scroll";
+  onMain = true
 });
 //Project 9
 document.querySelector("#view9").addEventListener("click", function(event) {
   document.querySelector("#detail9").style.display = "flex";
   document.body.style.overflowY = "hidden";
+  onMain = false
 });
 document.querySelector("#close9").addEventListener("click", function(event) {
   document.querySelector("#detail9").style.display = "none";
   document.body.style.overflowY = "scroll";
+  onMain = true
 });

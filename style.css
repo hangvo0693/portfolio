@@ -593,7 +593,7 @@ footer {
     max-width: 860px;
     height: calc(100vh - 80px);
     background: black;
-    border: var(--cream) solid 0.4px;
+    border: var(--cream) solid 0.1px;
     border-radius: 20px;
     box-shadow: 0px 0 10px 0 rgba(0, 0, 0, 0.8);
     display: flex;
@@ -614,6 +614,7 @@ footer {
 }
 .close:hover {
     border-width: 2px;
+    box-shadow: 0px 0 10px 0 rgba(255, 255, 255, 0.8);
     font-size: 20px;
 }
 .close:active {
