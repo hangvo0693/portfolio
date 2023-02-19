@@ -153,15 +153,15 @@ section {
     transition: opacity 1.5s ease-out;
 }
 .bannerImg:nth-of-type(1) {
-    background: url("./images/main/khach-view-3.png") no-repeat 50% 50%;
+    background: url("./images/main/khach-view-3.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 .bannerImg:nth-of-type(2) {
-    background: url("./images/main/ngu-2-view-1.png") no-repeat 50% 50%;
+    background: url("./images/main/ngu-2-view-1.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 .bannerImg:nth-of-type(3) {
-    background: url("./images/main/bep-view-1.png") no-repeat 50% 50%;
+    background: url("./images/main/bep-view-1.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 .bannerCover {
@@ -435,39 +435,39 @@ section {
 
 
 .project:nth-of-type(1) {
-    background: url("./images/nha-4/nha4-4.png") no-repeat 50% 50%;
+    background: url("./images/nha-2/nha2-2.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 .project:nth-of-type(2) {
-    background: url("./images/nha-3/nha3-3.png") no-repeat 50% 50%;
+    background: url("./images/kid/kid-4.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 .project:nth-of-type(3) {
-    background: url("./images/kid/kid-4.png") no-repeat 50% 50%;
+    background: url("./images/nha-3/nha3-1.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 .project:nth-of-type(4) {
-    background: url("./images/nha-2/nha2-2.png") no-repeat 50% 50%;
+    background: url("./images/nha-4/nha4-1.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 .project:nth-of-type(5) {
-    background: url("./images/nha-1/khach-1.png") no-repeat 50% 50%;
+    background: url("./images/nha-1/nha1-1.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 .project:nth-of-type(6) {
-    background: url("./images/new-alys/na-2.png") no-repeat 50% 50%;
+    background: url("./images/new-alys/na-2.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 .project:nth-of-type(7) {
-    background: url("./images/az-home/az-1.png") no-repeat 50% 50%;
+    background: url("./images/az-home/az-1.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 .project:nth-of-type(8) {
-    background: url("./images/vungtau/vungtau-15.png") no-repeat 50% 50%;
+    background: url("./images/vungtau/vungtau-9.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 .project:nth-of-type(9) {
-    background: url("./images/dongthap/dongthap-5.png") no-repeat 50% 50%;
+    background: url("./images/dongthap/dongthap-5.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
